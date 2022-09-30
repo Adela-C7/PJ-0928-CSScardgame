@@ -1,0 +1,222 @@
+body{
+
+    background-color: rgb(67, 148, 67);
+    
+    
+    border: 30px double rgb(214, 168, 70);
+    padding-bottom: 50px;
+
+    
+   
+
+}
+
+.container{
+    height: 100%;
+    
+}
+.header{
+  
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    
+}
+
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  height: 50vh;
+  gap: 50px;
+  border-radius: 25px;
+  
+  margin-right: 150px;
+  margin-left: 150px;
+  flex-shrink:0;
+  flex-grow:0;
+}
+
+
+.card-container {
+  position: relative;
+  perspective: 1000px;
+}
+
+.cover, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .25s ease-in-out;
+  display: flex;
+}
+
+#card {
+  display: none;
+}
+#card2 {
+  display: none;
+}
+#card3 {
+  display: none;
+}
+#card4 {
+  display: none;
+}
+#card5 {
+  display: none;
+}
+#card6 {
+  display: none;
+}
+#card7 {
+  display: none;
+}
+#card8 {
+  display: none;
+}
+#card9 {
+  display: none;
+}
+#card10 {
+  display: none;
+}
+#card11 {
+  display: none;
+}
+#card12 {
+  display: none;
+}
+
+
+
+
+
+
+
+
+.cover{
+  background-image: url(./mj-back.svg);
+  background-repeat: no-repeat;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(-180deg);
+}
+
+
+
+#card:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+
+/* card 1 */
+
+#card2:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card2:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+
+/* card2 */
+
+#card3:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card3:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 3 */
+#card4:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card4:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 4 */
+#card5:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card5:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 5 */
+
+#card6:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card6:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 6 */
+
+#card7:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card7:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 7 */
+
+#card8:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card8:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 8 */
+
+#card9:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card9:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 9 */
+
+#card10:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card10:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 10 */
+
+#card11:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card11:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 11 */
+
+#card12:checked + label .cover {
+  transform: rotateY(180deg);
+}
+
+#card12:checked + label .card-back {
+  transform: rotateY(0deg);
+}
+/* card 12 */
